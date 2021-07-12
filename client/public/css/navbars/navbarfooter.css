@@ -1,0 +1,28 @@
+/* || NavbarFooter */
+
+.navbar {
+    /* background-color: lavender; */
+
+    padding: 3rem 5rem 1rem;
+    font-family: 'Gugi', cursive;
+}
+
+.navbar-light .navbar-nav .nav-link .navbar-text {
+    color: #3D3D3D;
+}
+
+.navbar-light .navbar-text {
+    color: #3D3D3D;
+    font-size: 0.8rem;
+}
+
+.navbarfooter-nav-item {
+    /* background-color: palegreen; */
+
+    font-size: 1.2rem;
+}
+
+#navbarfooter-nav-portfolio {
+    color: #E85A4F;
+    font-size: 1.2rem;
+}

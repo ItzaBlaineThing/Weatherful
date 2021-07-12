@@ -2,6 +2,7 @@ import React from 'react';
 
 // Import Custom Components
 import NavbarHeader from '../navbars/NavbarHeader';
+import NavbarFooter from '../navbars/NavbarFooter';
 
 // Import Bootstrap Components
 import Container from 'react-bootstrap/Container';
@@ -27,7 +28,7 @@ export default function Landing() {
                     <Form>
                         <InputGroup className="landing-form-inputgroup">
                             <Form.Control type="email" placeholder="Enter the City Name or Zip Code" />
-                            <DropdownButton variant="landing-form-dropdown" title={"°F"} id="landing-dropdown-units">
+                            <DropdownButton variant="landing-form-dropdown" title={"°F"}>
                                 <Dropdown.Item eventKey="1">°C</Dropdown.Item>
                                 <Dropdown.Item eventKey="2">°K</Dropdown.Item>
                             </DropdownButton>
@@ -38,6 +39,7 @@ export default function Landing() {
                 </Container>
             </div>
 
+            <NavbarFooter />
         </div>
 	)
 	
