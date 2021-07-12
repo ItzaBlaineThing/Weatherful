@@ -1,0 +1,84 @@
+/* || Landing */
+
+.landing-div {
+    background-color: #FDF5E6;
+    height: 100vh;
+
+    text-align: center;
+}
+
+.landing-title {
+    color: #E85A4F;
+    font-family: 'Gugi', cursive;
+    font-size: 116px;
+}
+
+.landing-subtitle {
+    color: #8E8D8A;
+    font-family: 'Gugi', cursive;
+    font-size: 28px;
+    letter-spacing: 0.05rem;
+}
+
+.landing-search-div {
+    /* background-color: lavender; */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-form-inputgroup {
+    /* background-color: red; */
+
+    margin: 2rem auto;
+    width: 34vw;
+    border: 1px solid #3D3D3D;
+    border-radius: 10px;
+}
+
+.form-control::placeholder {
+    color: #3d3d3d73;
+    font-size: 20px;
+}
+
+.form-control {
+    height: 3rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.form-control:active, .form-control:focus {
+    box-shadow: 0 0 5px #E85A4F;
+}
+
+.btn-landing-form-dropdown {
+    background-color: #FFFFFF;
+    color: #8E8D8A;
+    font-size: 22px;
+    border-left: 1px solid #8E8D8A;
+
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-landing-form-dropdown:active, .btn-landing-form-dropdown:focus {
+    /* box-shadow: none; */
+    box-shadow: 0 0 5px #E85A4F;
+}
+
+.btn-landing-search {
+    background-color: #FDF5E6;
+    color: #E85A4F;
+    font-family: 'Gugi', cursive;
+    font-size: 30px;
+    padding: 0rem 5rem;
+    border: 3px solid #E85A4F;
+    border-radius: 50px;
+}
+
+.btn-landing-search:hover, .btn-landing-search:focus, .btn-landing-search:active {
+    background-color: #E85A4F;
+    color: #FDF5E6;
+    border: 3px solid #3D3D3D;
+}
