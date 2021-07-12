@@ -1,0 +1,22 @@
+/* || Weather */
+
+.weather-div {
+    background-color: #FDF5E6;
+    height: 100vh;
+
+    text-align: center;
+}
+
+.weather-results-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.weather-results-title {
+    color: #E85A4F;
+    font-family: 'Gugi', cursive;
+    font-size: 96px;
+    text-decoration: underline;
+}

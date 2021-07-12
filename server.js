@@ -3,6 +3,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
+const https = require('https');
+var fs = require('fs');
+
+// Pulling in our config information that is not being stored in git, including our API Key
+var configPath = './config.json';
+var configInfo = JSON.parse(fs.readFileSync(configPath, 'UTF-8'));
 
 // Setup Express
 const app = express();
@@ -18,8 +24,24 @@ app.use(express.static("public"));
 
 // Express Routes
 app.get("/", (req, res) => {
-    res.send("Up and Running!")
+    res.send("Up and Running!");
 });
+
+app.get("/api/search", (req, res) => {
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=jacksonville&appid=${configInfo.key}`;
+    console.log(url);
+
+    https.get(url, (response) => {
+
+        response.on('data', (data) => {
+            const weatherData = JSON.parse(data);
+            res.send({weatherData});
+        });
+        
+    });
+
+})
 
 app.listen(port, () => {
     console.log("Server running on port " + port);
