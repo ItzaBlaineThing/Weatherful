@@ -27,9 +27,11 @@ app.get("/", (req, res) => {
     res.send("Up and Running!");
 });
 
-app.get("/api/search", (req, res) => {
+var searchParameter = "";
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=jacksonville&appid=${configInfo.key}`;
+app.get("/api/results", (req, res) => {
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchParameter}&appid=${configInfo.key}`;
     console.log(url);
 
     https.get(url, (response) => {
@@ -40,6 +42,27 @@ app.get("/api/search", (req, res) => {
         });
         
     });
+
+});
+
+app.post("/api/search", (req, res) => {
+
+    console.log(req.body);
+    searchParameter = req.body.searchParameter;
+
+    // const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchParameter}&appid=${configInfo.key}`;
+    // console.log(url);
+
+    // https.get(url, (response) => {
+
+    //     response.on('data', (data) => {
+    //         const weatherData = JSON.parse(data);
+    //         res.send({weatherData});
+    //     });
+        
+    // });
+
+    res.redirect("/weather")
 
 })
 

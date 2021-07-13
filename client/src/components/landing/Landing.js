@@ -6,8 +6,6 @@ import NavbarFooter from '../navbars/NavbarFooter';
 
 // Import Bootstrap Components
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -25,9 +23,9 @@ export default function Landing() {
                     <h1 className="landing-title">WEATHERFUL</h1>
                     <h3 className="landing-subtitle">Check the weather in any city or zip code</h3>
 
-                    <Form>
+                    <Form method="POST" action="api/search" encType="multipar/form-data">
                         <InputGroup className="landing-form-inputgroup">
-                            <Form.Control type="email" placeholder="Enter the City Name or Zip Code" />
+                            <Form.Control type="text" placeholder="Enter the City Name or Zip Code" name="searchParameter" />
                             <DropdownButton variant="landing-form-dropdown" title={"°F"}>
                                 <Dropdown.Item eventKey="1">°C</Dropdown.Item>
                                 <Dropdown.Item eventKey="2">°K</Dropdown.Item>
