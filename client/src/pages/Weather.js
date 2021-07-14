@@ -71,18 +71,18 @@ export default function Weather() {
             <NavbarHeader />
 			
             <div className="weather-results-div">
-                <Container fluid>
+                <Container className="weather-results-container">
                     <Row>
                         <Col xl={12}>
                             <h1 className="weather-results-title">{cityName}</h1>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xl={6} className="weather-col-test">
-                            <Row>
-                                <Col xl={10} className="weather-col-test">
-                                    <h3 className="weather-results-main-description">Lightning</h3>
-                                    {/* <h3 className="weather-results-main-description">{mainDescription}</h3> */}
+                        <Col xl={8} className="weather-col-test">
+                            <Row className="weather-row">
+                                <Col className="weather-col-test">
+                                    {/* <h3 className="weather-results-main-description">Lightning</h3> */}
+                                    <h3 className="weather-results-main-description">{mainDescription}</h3>
                                     <h5 className="weather-results-description">{description}</h5>
                                 </Col>
                                 <Col xl={2} className="weather-col-test">
@@ -90,31 +90,35 @@ export default function Weather() {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xl={6} className="weather-col-test">
+                        <Col className="weather-col-test">
                             <h3 className="weather-results-temp">82°</h3>
                             {/* <h3 className="weather-results-temp">{temp}°</h3> */}
                         </Col>
                     </Row>
                     <Row>
                         <Col xl={12}>
-                            <Row>
+                            <Row className="weather-row-list">
                                 <Col xl={6} className="weather-col-info" id="weather-col-test">
                                     <ListGroup variant="flush">
-                                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                                        <ListGroup.Item>Humidity</ListGroup.Item>
+                                        <ListGroup.Item>Wind</ListGroup.Item>
+                                        <ListGroup.Item>Sunrise</ListGroup.Item>
                                     </ListGroup>
                                 </Col>
                                 <Col xl={6} className="weather-col-info">
                                     <ListGroup variant="flush">
-                                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                                        <ListGroup.Item>Feels Like</ListGroup.Item>
+                                        <ListGroup.Item>Pressure</ListGroup.Item>
+                                        <ListGroup.Item>Sunset</ListGroup.Item>
                                     </ListGroup>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
+
+                    <div className="results-search-div">
+                        <a href="/" className="results-search">New Search</a>
+                    </div>
                 </Container>
             </div>
 
