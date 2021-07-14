@@ -4,10 +4,14 @@
     background-color: #FDF5E6;
     height: 100vh;
 
-    text-align: center;
+    /* text-align: center; */
 }
 
 .weather-results-div {
+    background-color: aliceblue;
+
+    /* min-width: 40vw; */
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,5 +22,43 @@
     color: #E85A4F;
     font-family: 'Gugi', cursive;
     font-size: 96px;
+    text-align: center;
     text-decoration: underline;
+}
+
+.weather-results-main-description {
+    font-size: 96px;
+    padding: 0 1rem;
+}
+
+.weather-results-description {
+    font-size: 36px;
+}
+
+.weather-results-img {
+    background-color: #E85A4F;
+    border-radius: 50px;
+}
+
+.weather-results-temp {
+    font-size: 152px;
+    /* margin-top: -24px; */
+    text-align: right;
+}
+
+.weather-col-test {
+    /* background-color: lavender; */
+    border: 1px solid #E85A4F;
+    padding: 0;
+}
+
+.weather-col-info {
+    /* background-color: lavender;
+    border: 1px solid #E85A4F; */
+    padding: 0;
+    text-align: center;
+}
+
+#weather-col-test {
+    border-right: 1px solid #3D3D3D;
 }

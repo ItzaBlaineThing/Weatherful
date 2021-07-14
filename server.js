@@ -31,13 +31,14 @@ var searchParameter = "";
 
 app.get("/api/results", (req, res) => {
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchParameter}&appid=${configInfo.key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchParameter}&units=imperial&appid=${configInfo.key}`;
     console.log(url);
 
     https.get(url, (response) => {
 
         response.on('data', (data) => {
             const weatherData = JSON.parse(data);
+            console.log(weatherData);
             res.send({weatherData});
         });
         
