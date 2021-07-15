@@ -63,7 +63,7 @@
 .weather-col-test {
     /* background-color: lavender; */
     /* border: 1px solid #E85A4F; */
-    padding: 0;
+    /* text-align: center; */
 }
 
 .weather-row {
@@ -89,6 +89,12 @@
     color: #3D3D3D;
     background-color: #FDF5E6;
     border: 2px solid #8E8D8A;
+}
+
+.weather-listgroup-item {
+    color: #3D3D3D;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .results-search-div {
