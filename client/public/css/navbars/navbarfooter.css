@@ -26,3 +26,39 @@
     color: #E85A4F;
     font-size: 1.2rem;
 }
+
+/* Large Screen Breakpoint */
+@media (min-width: 1025px) {
+    
+}
+
+/* Laptop Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 3rem 2rem 0.4rem;
+    }
+    .navbar-light .navbar-text {
+        font-size: 0.6rem;
+    }
+    .navbarfooter-nav-item {
+        font-size: 0.8rem;
+    }
+    .nav-link {
+        padding: 0;
+    }
+    
+    #navbarfooter-nav-portfolio {
+        color: #E85A4F;
+        font-size: 0.8rem;
+    }
+}

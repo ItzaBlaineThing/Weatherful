@@ -2,14 +2,12 @@
 
 .navbar {
     /* background-color: lavender; */
-
     padding: 3rem 5rem;
     font-family: 'Gugi', cursive;
 }
 
 #navbarheader-brand {
     /* background-color: palegoldenrod; */
-
     color: #3D3D3D;
     font-size: 3rem;
 }
@@ -20,6 +18,21 @@
 
 .navbarheader-nav-item {
     /* background-color: palegreen; */
-
     font-size: 1.6rem;
+}
+
+/* Large Screen Breakpoint */
+@media (min-width: 1025px) {}
+
+/* Laptop Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* Tablet Breakpoint */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 3rem 2rem;
+    }
 }

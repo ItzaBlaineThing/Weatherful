@@ -10,13 +10,15 @@
 .landing-title {
     color: #E85A4F;
     font-family: 'Gugi', cursive;
-    font-size: 116px;
+    /* font-size: 116px; */
+    font-size: 7.2rem;
 }
 
 .landing-subtitle {
     color: #8E8D8A;
     font-family: 'Gugi', cursive;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 1.75rem;
     letter-spacing: 0.05rem;
 }
 
@@ -40,7 +42,9 @@
 
 .form-control::placeholder {
     color: #3d3d3d73;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1rem;
+    /* font-size: 1.6vw; */
 }
 
 .form-control {
@@ -56,7 +60,8 @@
 .btn-landing-form-dropdown {
     background-color: #FFFFFF;
     color: #8E8D8A;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 1.45rem;
     border-left: 1px solid #8E8D8A;
 
     border-radius: 0 10px 10px 0;
@@ -71,7 +76,8 @@
     background-color: #FDF5E6;
     color: #E85A4F;
     font-family: 'Gugi', cursive;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2rem;
     padding: 0rem 5rem;
     border: 3px solid #E85A4F;
     border-radius: 50px;
@@ -81,4 +87,57 @@
     background-color: #E85A4F;
     color: #FDF5E6;
     border: 3px solid #3D3D3D;
+}
+
+/* Large Screen Breakpoint */
+@media (min-width: 1025px) {
+    
+}
+
+/* Laptop Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .landing-form-inputgroup {
+        width: 50vw;
+    }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 481px) and (max-width: 768px) {
+    .landing-title {
+        font-size: 5rem;
+    }
+    .landing-subtitle {
+        font-size: 1.35rem;
+        letter-spacing: 0.05rem;
+    }
+    .landing-form-inputgroup {
+        width: 50vw;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    .landing-title {
+        font-size: 3.2rem;
+    }
+    .landing-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+    }
+    .landing-form-inputgroup {
+        margin: 1.2rem auto;
+        width: 75vw;
+    }
+    .form-control::placeholder {
+        font-size: 3.4vw;
+    }
+    .btn-landing-search {
+        background-color: #FDF5E6;
+        color: #E85A4F;
+        font-family: 'Gugi', cursive;
+        font-size: 1.6rem;
+        padding: 0rem 5rem;
+        border: 3px solid #E85A4F;
+        border-radius: 50px;
+    }
 }
